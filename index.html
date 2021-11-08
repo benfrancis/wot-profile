@@ -2487,12 +2487,14 @@
             <code>EventAffordance</code> and MUST be serialized in JSON.
             The <code>id</code> field SHOULD be set to a unique identifier for 
             the event, for use when re-establishing a dropped connection (see 
-            below).
+            below). It is RECOMMENDED that the identifier is a timestamp 
+            representing the time at which the event occurred, in ISO 8601 
+            format [[ISO8601-1]].
           </p>
           <pre class="example">
             event: overheated\n
             data: 90\n
-            id: 12345\n\n
+            id: 2021-11-16T16:53:50.817Z\n\n
           </pre>
           <p class="rfc2119-assertion" 
             id="core-profile-protocol-binding-events-subscribeevent-7">
@@ -2641,7 +2643,7 @@
           <pre class="example">
             event: overheated\n
             data: 90\n
-            id: 12345\n\n
+            id: 2021-11-16T16:53:50.817Z\n\n
           </pre>
           <p class="rfc2119-assertion" 
             id="core-profile-protocol-binding-events-subscribeallevents-5">
