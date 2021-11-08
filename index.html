@@ -2723,8 +2723,26 @@
         </p>
       </section>
     </section>
-  </section>
 
+    <!-- Discovery -->
+    <section>
+      <h2 id="discovery">Discovery</h2>
+      <p class="rfc2119-assertion" id="core-profile-discovery-1">
+        In order to a conform with the Core Profile, a Web Thing's Thing
+        Description [[wot-thing-description]] MUST be retrievable from a URL
+        [[URL]] using the HTTP protocol [[HTTP11]], to enable its discovery
+        using a 
+        <a href="https://w3c.github.io/wot-discovery/#introduction-direct">
+        Direct Introduction Mechanism</a> [[wot-discovery]].
+      </p>
+      <p class="rfc2119-assertion" id="core-profile-discovery-2">
+        In order to a conform with the Core Profile, a Consumer MUST be 
+        able to retrieve a Thing Description when provided with its HTTP
+        URL.
+      </p>
+    </section>
+  </section>
+  
   <section id="core-profile-json-schema" class="appendix normative">
     <h1>JSON Schema of the Core Profile</h1>
     <p>
